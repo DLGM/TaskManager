@@ -1,9 +1,17 @@
-# Ignore compiled files
+# Ignore build artifacts
 bin/
 obj/
+TestResults/
 
-# Ignore user-specific files
+# Ignore Visual Studio/VS Code files
+.vscode/
+.vs/
 *.user
 *.suo
-*.vs
-.vscode/
+
+# Ignore EF Core Migrations (optional)
+Migrations/
+
+# Ignore logs and temporary files
+*.log
+*.tmp
