@@ -1,9 +1,0 @@
-# Ignore compiled files
-bin/
-obj/
-
-# Ignore user-specific files
-*.user
-*.suo
-*.vs
-.vscode/
