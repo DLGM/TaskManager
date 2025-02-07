@@ -1,0 +1,20 @@
+<h2>Task List</h2>
+
+<input type="text" [(ngModel)]="newTaskTitle" placeholder="Enter a new task">
+<button (click)="addTask()">Add Task</button>
+
+<ul>
+  <li *ngFor="let task of tasks">
+    <span [style.textDecoration]="task.isCompleted ? 'line-through': 'none'">
+      {{ task.title }}
+    </span>
+
+    <button (click)="markComplete(task)" [disabled]="task.isCompleted">
+      v Mark Complete
+    </button>
+
+    <button (click)="deleteTask(task.id)" [disabled]="task.isCompleted">
+      x Delete
+    </button>
+  </li>
+</ul>
